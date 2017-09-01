@@ -1,0 +1,11 @@
+8-31 Paul Comment: I think we need more details on this project. What is the scenario? Are we trying to predict the chance that a player has a certain card?
+
+Again, more details please.
+----
+
+1.Select topic -- Predicting poker hands
+2.Figure out a way to identify different cards.
+3.Figure out a way to identify hands.
+4.Run simulation for every hand opponent could have based on the remaining 47 cards.
+5.Calculate probabilities needed to fold, rasie, call, check, or bet.
+6.Return action.
