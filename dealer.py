@@ -1,3 +1,4 @@
+#Comment from Paul: Please comment your code about what you do for each code.
 import collections
 import itertools
 import random
