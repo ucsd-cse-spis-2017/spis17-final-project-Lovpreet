@@ -12,3 +12,7 @@ Again, more details please.
   c. Calculate chances of opponent having a better or worse hand using remaining cards in deck
 5.Determine probabilities needed to fold, rasie, call, check, or bet.
 6.Return action.
+
+
+
+Resource: http://cowboyprogramming.com/2007/01/04/programming-poker-ai/
