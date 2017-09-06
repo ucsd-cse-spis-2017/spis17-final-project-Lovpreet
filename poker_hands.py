@@ -279,25 +279,41 @@ for i in range(len(possible_combinations)):
     possible_combinations[i].calculate()
     score = score + get_better_hand(myHand, possible_combinations[i])
 print (myHand)
-print (score)
+##print (score)
 
 
 hand_strength = score/len(possible_combinations)
-print (hand_strength)
+##print (hand_strength)
 
 
 #Pot odds are always going to be 33%
 pot_odds = .333
 RR = hand_strength/pot_odds
+##print (RR)
 
-if RR < 0.8:
-    #How do I make it execute differently based on percentages
-if RR < 1.0:
-
-if RR <1.3:
-
-else 
-
+if 0.0 < RR <= 1.0:
+    if random.randint (1, 100) <=95:
+        print("Fold")
+    elif random.randint (1, 100) >95:
+        print("Raise")
+    
+if 1.0 < RR <= 2.0:
+    if random.randint (1, 100) <=80:
+        print("Fold")
+    elif random.randint (1, 100) >80>85:
+        print("Call")
+    elif random.randint (1, 100) >=85:
+        print("Raise")
+if 2.0 < RR <= 3.0:
+    if random.randint (1, 100) >=60:
+        print("Call")
+    elif random.randint (1, 100) <60:
+        print("Raise")
+else: 
+    if random.randint (1, 100) >=30:
+        print("Call")
+    elif random.randint (1, 100) <30:
+        print("Raise")
 
 
 
