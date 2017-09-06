@@ -286,11 +286,17 @@ hand_strength = score/len(possible_combinations)
 print (hand_strength)
 
 
-        
+#Pot odds are always going to be 33%
+pot_odds = .333
+RR = hand_strength/pot_odds
 
+if RR < 0.8:
+    #How do I make it execute differently based on percentages
+if RR < 1.0:
 
+if RR <1.3:
 
-
+else 
 
 
 
