@@ -6,8 +6,8 @@ SUIT_LIST = ("Hearts", "Spades", "Diamonds", "Clubs")
 NUMERAL_LIST = ("2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace")
 SCORE_DICT = {"2": 0, "3": 1, "4": 2, "5": 3, "6": 4, "7": 5, "8": 6, "9": 7, "10":8, "Jack": 9, "Queen":10, "King":11, "Ace":12}
 HAND_DICT = {"Nothing.": 0, "One pair.": 1, "Two pair.": 2, "Three-of-a-kind.": 3, "Straight.": 4, "Flush.": 5, "Full house.":6, "Four-of-a-kind.": 7, "Straight flush.":8, "Royal flush":9}
-#if SCORE_DICT["2"] < SCORE_DICT["King"]
 
+#Adds cards not in first hand to an array
 def generate_all_cards(myHand):
     all_cards = []
     for suit in SUIT_LIST:
@@ -148,6 +148,7 @@ opponent_hand = newDeck.get_opponent_hand()
 myHand.calculate()
 all_cards = generate_all_cards(myHand.card_list)
 
+#Finds all possible combinations of 5 different cards the opponent could have 
 possible_combinations = []
 for i in range(len(all_cards)):
     for j in range(i+1, len(all_cards)):
@@ -195,17 +196,3 @@ elif RR > 3.0:
         print("Call")
     elif random.randint (1, 100) <30:
         print("Raise")
-
-
-
-
-
-
-
-
-
-
-
-
-    
- 
